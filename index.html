@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Page</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Love Page</h1>
+    <p>This is a simple webpage with navigation to one page and a lot of love!</p>
+    
+    <!-- Navigation button -->
+    <a href="https://example.com">Go to Another Page</a>
+    
+    <!-- Buttons -->
+    <button onclick="showLove()">Show Love</button>
+    <button onclick="hideLove()">Hide Love</button>
+    
+    <!-- Text area for displaying "I Love You" -->
+    <div id="loveText" style="display: none;">
+        <p>I Love You</p>
+    </div>
+    
+    <!-- JavaScript to toggle the "I Love You" text -->
+    <script>
+        function showLove() {
+            document.getElementById("loveText").style.display = "block";
+        }
+        
+        function hideLove() {
+            document.getElementById("loveText").style.display = "none";
+        }
+    </script>
+</body>
+</html>
